@@ -5,13 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlygplatsCS2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
     <Grid>
-        <Rectangle Fill="#FF2B2BBB" HorizontalAlignment="Left" Height="220" Stroke="Black" VerticalAlignment="Top" Width="129"/>
-        <Label x:Name="lapsLbl" Content="42" HorizontalAlignment="Left" Margin="10,-23,0,0" VerticalAlignment="Top" FontSize="96"/>
-        <Label x:Name="incomingFlightsLbl" Content="Incoming flights:" HorizontalAlignment="Left" Margin="129,10,0,0" VerticalAlignment="Top" Width="130" Height="30"/>
-        <Label x:Name="outgoingFlightsLbl" Content="Outgoing flights: " HorizontalAlignment="Left" Margin="129,45,0,0" VerticalAlignment="Top" Width="130" Height="30"/>
-        <Rectangle Fill="#FF2BBB32" HorizontalAlignment="Left" Height="100" Margin="0,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="289"/>
-        <Rectangle Fill="#FFBB2B2B" HorizontalAlignment="Left" Height="100" Margin="289,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="228"/>
+        <Rectangle Fill="#FFBB2B2B" HorizontalAlignment="Left" Height="196" Margin="337,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="180"/>
+        <Rectangle Fill="#FF2BBB32" HorizontalAlignment="Left" Height="196" Margin="157,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="180"/>
+        <Rectangle Fill="#FF2B2BBB" HorizontalAlignment="Left" Height="320" Stroke="Black" VerticalAlignment="Top" Width="157"/>
+        <Label x:Name="lapsLbl" Content="Laps: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,41,0,0"/>
+        <Label x:Name="incomingFlightsLbl" Content="Incoming flights: 0" HorizontalAlignment="Left" Margin="162,4,0,0" VerticalAlignment="Top" Width="130" Height="30"/>
+        <Label x:Name="outgoingFlightsLbl" Content="Outgoing flights: 0" HorizontalAlignment="Left" Margin="342,4,0,0" VerticalAlignment="Top" Width="130" Height="30"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="79,222,0,-2" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.03"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Rectangle Fill="#FFBDB8B8" HorizontalAlignment="Left" Height="124" Margin="157,196,0,0" Stroke="Black" VerticalAlignment="Top" Width="360"/>
+        <Label x:Name="logLbl" Content="Log:" HorizontalAlignment="Left" Margin="162,201,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="logMsgLbl1" Content="LogMessage1" HorizontalAlignment="Left" Margin="162,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.342,-0.077"/>
+        <Label x:Name="logMsgLbl2" Content="LogMessage2" HorizontalAlignment="Left" Margin="162,263,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="logMsgLbl3" Content="LogMessage3" HorizontalAlignment="Left" Margin="162,294,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="statisticsLbl" Content="Statistics:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
