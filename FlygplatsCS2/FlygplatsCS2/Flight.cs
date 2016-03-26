@@ -20,9 +20,7 @@ namespace FlygplatsCS2
             _flightnumber = RandomString(8);
         }
 
-        
-
-        public string Name
+        public string flightNumber
         {
             get { return _flightnumber; }
             set { _flightnumber = value; }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace FlygplatsCS2
 {
@@ -20,27 +21,63 @@ namespace FlygplatsCS2
     /// </summary>
     public partial class MainWindow : Window
     {
-        Random rnd = new Random();
         public MainWindow()
         {
             InitializeComponent();
             this.Title = "Airport Simulator";
+
+            DispatcherTimer dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += new EventHandler(timerTick);
+            dispatcherTimer.Interval = TimeSpan.FromMilliseconds(20);
+            dispatcherTimer.Start();
+
+
         }
 
-        private bool plane_appears()
+        Random rnd = new Random();
+        List<Flight> incomingFlights = new List<Flight>();
+        List<Flight> outgoingFlights = new List<Flight>();
+        int incFlights = 0, outFlights = 0, occfor = 0, laps = 0;
+        bool occupied = false;
+
+        public void timerTick(object sender, EventArgs e)
         {
-            if ((rnd.Next(0, 11)) == 0)
-                return true;
-            return false;
+            lapsValLbl.Content = ++laps;
+            if (rnd.Next(10) == 0)
+            {
+                incomingFlightsValLbl.Content = ++incFlights;
+                incomingFlights.Add(new Flight());
+            }
+            if (rnd.Next(10) == 0)
+            {
+                outgoingFlightsValLbl.Content = ++outFlights;
+                outgoingFlights.Add(new Flight());
+            }
+            
+            switch(incomingFlights.Count)
+            {
+                case 1:
+                    incFlightNr1.Content = incomingFlights[0].flightNumber;
+                    incFlightPsgC1.Content = incomingFlights[0].numberOfPassengers;
+                    break;
+                default:
+                    System.Console.Write("Hello");
+                    break;
+
+            }
+
+            switch(outgoingFlights.Count)
+            {
+                case 1:
+                    System.Console.Write("Hello");
+                    break;
+                default:
+                    System.Console.Write("Hello");
+                    break;
+            }
+ 
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            List<Flight> incomingFlights = new List<Flight>();
-            List<Flight> outgoingFlights = new List<Flight>();
-            int used = 0, unused = 0, occ = 0, laps = 0, incomingCrashedLowFuel = 0, incomingCrashedAccident = 0, outgoingCrashedAccident = 0, planesOut = 0, planesIn = 0;
-            bool occupied = false;
-            Flight f = new Flight();
-        }
+        
     }
 }
