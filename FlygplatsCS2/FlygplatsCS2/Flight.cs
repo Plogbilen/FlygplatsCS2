@@ -16,8 +16,9 @@ namespace FlygplatsCS2
 
         public Flight()
         {
-            _fuelLevel = rnd.Next(0, 11);
+            _fuelLevel = rnd.Next(2, 11);
             _flightnumber = RandomString(8);
+            _numberOfPassengers = rnd.Next(50, 600);
         }
 
         public string flightNumber

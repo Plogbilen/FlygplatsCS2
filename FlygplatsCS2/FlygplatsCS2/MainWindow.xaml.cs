@@ -58,8 +58,52 @@ namespace FlygplatsCS2
             {
                 case 1:
                     incFlightNr1.Content = incomingFlights[0].flightNumber;
+                    incFlightFuelLvl1.Content = incomingFlights[0].fuelLevel;
                     incFlightPsgC1.Content = incomingFlights[0].numberOfPassengers;
                     break;
+
+                case 2:
+                    incFlightNr1.Content = incomingFlights[0].flightNumber;
+                    incFlightFuelLvl1.Content = incomingFlights[0].fuelLevel;
+                    incFlightPsgC1.Content = incomingFlights[0].numberOfPassengers;
+
+                    incFlightNr2.Content = incomingFlights[1].flightNumber;
+                    incFlightFuelLvl2.Content = incomingFlights[1].fuelLevel;
+                    incFlightPsgC2.Content = incomingFlights[1].numberOfPassengers;
+                    break;
+
+                case 3:
+                    incFlightNr1.Content = incomingFlights[0].flightNumber;
+                    incFlightFuelLvl1.Content = incomingFlights[0].fuelLevel;
+                    incFlightPsgC1.Content = incomingFlights[0].numberOfPassengers;
+
+                    incFlightNr2.Content = incomingFlights[1].flightNumber;
+                    incFlightFuelLvl2.Content = incomingFlights[1].fuelLevel;
+                    incFlightPsgC2.Content = incomingFlights[1].numberOfPassengers;
+
+                    incFlightNr3.Content = incomingFlights[2].flightNumber;
+                    incFlightFuelLvl3.Content = incomingFlights[2].fuelLevel;
+                    incFlightPsgC3.Content = incomingFlights[2].numberOfPassengers;
+                    break;
+
+                case 4:
+                    incFlightNr1.Content = incomingFlights[0].flightNumber;
+                    incFlightFuelLvl1.Content = incomingFlights[0].fuelLevel;
+                    incFlightPsgC1.Content = incomingFlights[0].numberOfPassengers;
+
+                    incFlightNr2.Content = incomingFlights[1].flightNumber;
+                    incFlightFuelLvl2.Content = incomingFlights[1].fuelLevel;
+                    incFlightPsgC2.Content = incomingFlights[1].numberOfPassengers;
+
+                    incFlightNr3.Content = incomingFlights[2].flightNumber;
+                    incFlightFuelLvl3.Content = incomingFlights[2].fuelLevel;
+                    incFlightPsgC3.Content = incomingFlights[2].numberOfPassengers;
+
+                    incFlightNr4.Content = incomingFlights[3].flightNumber;
+                    incFlightFuelLvl4.Content = incomingFlights[3].fuelLevel;
+                    incFlightPsgC4.Content = incomingFlights[3].numberOfPassengers;
+                    break;
+
                 default:
                     System.Console.Write("Hello");
                     break;
