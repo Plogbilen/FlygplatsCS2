@@ -18,8 +18,8 @@
         <Rectangle Fill="#FFBDB8B8" HorizontalAlignment="Left" Height="164" Margin="150,305,0,0" Stroke="Black" VerticalAlignment="Top" Width="592"/>
         <Rectangle Fill="#FF7CB0BF" HorizontalAlignment="Left" Height="469" Stroke="Black" VerticalAlignment="Top" Width="150"/>
         <Label x:Name="lapsValLbl" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="65,34,0,0" FlowDirection="RightToLeft" Width="80"/>
-        <Label x:Name="incomingFlightsLbl" Content="Incoming flights: " HorizontalAlignment="Left" Margin="155,4,0,0" VerticalAlignment="Top" Width="170" Height="30"/>
-        <Label x:Name="outgoingFlightsLbl" Content="Outgoing flights:" HorizontalAlignment="Left" Margin="455,4,0,0" VerticalAlignment="Top" Width="130" Height="30"/>
+        <Label x:Name="incomingFlightsLbl" Content="Incoming flights: " HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="170" Height="30"/>
+        <Label x:Name="outgoingFlightsLbl" Content="Outgoing flights:" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="130" Height="30"/>
         <Label x:Name="logLbl" Content="Log:" HorizontalAlignment="Left" Margin="155,305,0,0" VerticalAlignment="Top" Height="34" Width="55"/>
         <Label x:Name="logMsgLbl1" Content="{}{}" HorizontalAlignment="Left" Margin="155,326,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.342,-0.077" Width="540" Height="35"/>
         <Label x:Name="logMsgLbl2" Content="{}{}" HorizontalAlignment="Left" Margin="155,344,0,0" VerticalAlignment="Top" Width="540" Height="34"/>
@@ -50,8 +50,8 @@
         <Label x:Name="outFlightPsgC5" Content="Label" HorizontalAlignment="Left" Margin="652,164,0,0" VerticalAlignment="Top" Width="80" FlowDirection="RightToLeft"/>
         <Label x:Name="outFlightPsgC6" Content="Label" HorizontalAlignment="Left" Margin="652,190,0,0" VerticalAlignment="Top" Width="80" FlowDirection="RightToLeft"/>
         <Label x:Name="outFlightPsgC4" Content="Label" HorizontalAlignment="Left" Margin="652,138,0,0" VerticalAlignment="Top" Width="80" FlowDirection="RightToLeft"/>
-        <Label x:Name="incomingFlightsValLbl" Content="Label" HorizontalAlignment="Left" Margin="390,4,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" Width="50"/>
-        <Label x:Name="outgoingFlightsValLbl" Content="Label" HorizontalAlignment="Left" Margin="694,4,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+        <Label x:Name="incomingFlightsValLbl" Content="Label" HorizontalAlignment="Left" Margin="95,60,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" Width="50"/>
+        <Label x:Name="outgoingFlightsValLbl" Content="Label" HorizontalAlignment="Left" Margin="107,86,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
         <Label x:Name="logMsgLbl4" Content="{}{}" HorizontalAlignment="Left" Margin="155,378,0,0" VerticalAlignment="Top" Width="540"/>
         <Label x:Name="logMsgLbl5" Content="{}{}" HorizontalAlignment="Left" Margin="155,395,0,0" VerticalAlignment="Top" Width="540"/>
         <Label x:Name="logMsgLbl6" Content="{}{}" HorizontalAlignment="Left" Margin="155,415,0,0" VerticalAlignment="Top" Width="540"/>
@@ -81,5 +81,7 @@
         <Label x:Name="incFlightFuelLvl7" Content="Label" HorizontalAlignment="Left" Margin="287,216,0,0" VerticalAlignment="Top" Width="80"/>
         <Label x:Name="incFlightFuelLvl8" Content="Label" HorizontalAlignment="Left" Margin="287,242,0,0" VerticalAlignment="Top" Width="80"/>
         <Label x:Name="incFlightFuelLvl9" Content="Label" HorizontalAlignment="Left" Margin="287,268,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="label3" Content="Incoming flights&#xD;&#xA;" HorizontalAlignment="Left" Margin="250,4,0,0" VerticalAlignment="Top" Width="105" Height="30"/>
+        <Label x:Name="label4" Content="Outgoing flights" HorizontalAlignment="Left" Margin="562,4,0,0" VerticalAlignment="Top" Width="99"/>
     </Grid>
 </Window>
