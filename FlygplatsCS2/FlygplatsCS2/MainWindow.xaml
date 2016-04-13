@@ -57,7 +57,6 @@
         <Label x:Name="logMsgLbl6" Content="{}{}" HorizontalAlignment="Left" Margin="155,415,0,0" VerticalAlignment="Top" Width="540"/>
         <Label x:Name="logMsgLbl7" Content="{}{}" HorizontalAlignment="Left" Margin="155,433,0,0" VerticalAlignment="Top" Width="540"/>
         <Separator HorizontalAlignment="Left" Height="22" Margin="155,20,0,0" VerticalAlignment="Top" Width="290"/>
-        <Separator HorizontalAlignment="Left" Height="22" Margin="455,20,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="0.397,-4.318"/>
         <Label x:Name="label" Content="Flightnumber:" HorizontalAlignment="Left" Margin="157,34,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="Passengers:" HorizontalAlignment="Left" Margin="370,34,0,0" VerticalAlignment="Top" Width="70" Height="26"/>
         <Label x:Name="label2" Content="Fuellevel:" HorizontalAlignment="Left" Margin="287,34,0,0" VerticalAlignment="Top" Width="68"/>
@@ -71,7 +70,7 @@
         <Label x:Name="incFlightPsgC8" Content="Label" HorizontalAlignment="Left" Margin="360,242,0,0" VerticalAlignment="Top" Width="80" FlowDirection="RightToLeft"/>
         <Label x:Name="incFlightPsgC9" Content="Label" HorizontalAlignment="Left" Margin="360,268,0,0" VerticalAlignment="Top" Width="80" FlowDirection="RightToLeft"/>
         <Separator HorizontalAlignment="Left" Height="22" Margin="155,47,0,0" VerticalAlignment="Top" Width="290"/>
-        <Separator HorizontalAlignment="Left" Height="22" Margin="455,47,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="0.397,-4.318"/>
+        <Separator HorizontalAlignment="Left" Height="22" Margin="455,20,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="0.397,-4.318"/>
         <Label x:Name="incFlightFuelLvl1" Content="Label" HorizontalAlignment="Left" Margin="287,60,0,0" VerticalAlignment="Top" Width="80"/>
         <Label x:Name="incFlightFuelLvl2" Content="Label" HorizontalAlignment="Left" Margin="287,86,0,0" VerticalAlignment="Top" Width="80"/>
         <Label x:Name="incFlightFuelLvl3" Content="Label" HorizontalAlignment="Left" Margin="287,112,0,0" VerticalAlignment="Top" Width="80"/>
@@ -83,5 +82,7 @@
         <Label x:Name="incFlightFuelLvl9" Content="Label" HorizontalAlignment="Left" Margin="287,268,0,0" VerticalAlignment="Top" Width="80"/>
         <Label x:Name="label3" Content="Incoming flights&#xD;&#xA;" HorizontalAlignment="Left" Margin="250,4,0,0" VerticalAlignment="Top" Width="105" Height="30"/>
         <Label x:Name="label4" Content="Outgoing flights" HorizontalAlignment="Left" Margin="562,4,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label x:Name="stripOneLbl" Content="Strip one:" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="92" Height="26"/>
+        <Label x:Name="stripOneLblVal" Content="Label" HorizontalAlignment="Left" Margin="107,112,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
